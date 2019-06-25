@@ -33,7 +33,7 @@ RUN apt-get update && \
         dialog \
         apt-utils \
         parallel \
-        libxml2 \
+        libxml2-dev \
         zlib1g-dev \
         python-igraph \
         gfortran && \
