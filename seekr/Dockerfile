@@ -15,7 +15,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y python3 \
-        python-pip3 \
+        python3-pip \
         software-properties-common \
         build-essential \
         unzip \
@@ -33,6 +33,9 @@ RUN apt-get update && \
         dialog \
         apt-utils \
         parallel \
+        libxml2 \
+        zlib1g-dev \
+        python-igraph \
         gfortran && \
     apt-get clean && \
     apt-get purge && \
